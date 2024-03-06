@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 
 # パッケージのメタデータ
 [project]
-name = "example_package_Sen-Step403-first"  #YOUR_USERNAME_HEREにはあなたの名前を入れてください。
+name = "example_package_tyler"  #YOUR_USERNAME_HEREにはあなたの名前を入れてください。
 version = "0.0.1"
 authors = [
   { name="Example Author", email="author@example.com" },
@@ -22,3 +22,8 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/pypa/sampleproject"
 "Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+
+[
+tool.hatch.build.targets.wheel
+]
+packages = ["src/example_package_tyler"]

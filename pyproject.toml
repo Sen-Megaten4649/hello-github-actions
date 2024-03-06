@@ -23,7 +23,7 @@ classifiers = [
 "Homepage" = "https://github.com/pypa/sampleproject"
 "Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
 
-[
-tool.hatch.build.targets.wheel
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/example_package_tyler"
 ]
-packages = ["src/example_package_tyler"]
